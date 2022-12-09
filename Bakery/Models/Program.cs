@@ -18,8 +18,9 @@ namespace Bakery.Program
       int pastryCount = int.Parse(Console.ReadLine());
 
       Bread bread = new Bread(breadCount);
+      Pastry pastry = new Pastry(pastryCount);
 
-      double totalCost = bread.GetCost();
+      double totalCost = bread.GetCost() + pastry.GetCost();
       Console.WriteLine($"Your total cost is ${totalCost}.");
       
 
