@@ -17,12 +17,27 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
-    public void GetCost_ReturnsTotalCost_TotalCost()
+    public void GetCost_ReturnsTotalCostOfBread_TotalCost()
     {
       int breadCount = 1;
       Bread bread = new Bread(breadCount);
       double totalCost = bread.GetCost();
       Assert.AreEqual(totalCost, 5);
+    }
+
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry(2);
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+    [TestMethod]
+    public void GetCost_ReturnsTotalCostOfPastry_TotalCost()
+    {
+      int pastryCount = 5;
+      Pastry pastry = new Pastry(pastryCount);
+      double totalCost = pastry.GetCost();
+      Assert.AreEqual(totalCost, 7);
     }
 
 
