@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Bakery.Program;
 
 namespace Bakery.Models
@@ -22,8 +21,4 @@ namespace Bakery.Models
 
   }
 
-  public class Pastry
-  {
-
-  }
 }
